@@ -51,4 +51,31 @@ class CompleteAuthorizeResponse extends AbstractResponse
         
         return true;
     }
+    
+    public function getCVNCode()
+    {
+        return isset($this->data['auth_cv_result']) ? $this->data['auth_cv_result'] : null;
+    }
+
+    public function getAVSCode()
+    {
+        return isset($this->data['auth_avs_code']) ? $this->data['auth_avs_code'] : null;
+    }
+
+    public function getReasonCode()
+    {
+        return isset($this->data['reason_code']) ? $this->data['reason_code'] : null;
+    }
+
+    public function getInvalidFields()
+    {
+        $array = array();
+        
+        if (!empty($this->data['invalid_fields']))
+        {
+            $array = explode(",", $this->data['invalid_fields']);
+        }
+        
+        return $array;
+    }    
 }
