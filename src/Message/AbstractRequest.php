@@ -112,8 +112,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest i
      *
      * @param array $data
      * @param array $fields
-     * @param
-     *            $secret_key
+     * @param string $secret_key
      *
      * @return string
      */
