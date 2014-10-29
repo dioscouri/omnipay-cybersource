@@ -140,8 +140,7 @@ class Gateway extends AbstractGateway
     public function generateSignature($data)
     {
         $data_to_sign = array();
-        foreach ($data as $key => $value)
-        {
+        foreach ($data as $key => $value) {
             $data_to_sign[] = $key . "=" . $value;
         }
         $pairs = implode(',', $data_to_sign);

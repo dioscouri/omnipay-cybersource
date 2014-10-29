@@ -39,7 +39,8 @@ class AuthorizeRequest extends AbstractRequest
         return implode(",", $dataToSign);
     }
 
-    public function getRequiredFields() {
+    public function getRequiredFields()
+    {
         $extraFields = $this->getIsUsOrCanada() ? $this->getRequiredFieldsUsAndCanada() : array();
         return array_merge(array(
             'amount',
@@ -53,7 +54,8 @@ class AuthorizeRequest extends AbstractRequest
         ), $extraFields);
     }
 
-    public function getRequiredFieldsUsAndCanada() {
+    public function getRequiredFieldsUsAndCanada()
+    {
         return array(
             'postcode',
             'billingState',

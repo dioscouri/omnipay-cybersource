@@ -119,12 +119,11 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     public function generateSignature($data, $fields, $secret_key)
     {
         $data_to_sign = array();
-        foreach ($fields as $field)
-        {
+        foreach ($fields as $field) {
             $data_to_sign[] = $field . "=" . $data[$field];
         }
         $pairs = implode(',', $data_to_sign);
-        return base64_encode(hash_hmac('sha256', $pairs, $secret_key, TRUE));
+        return base64_encode(hash_hmac('sha256', $pairs, $secret_key, true));
     }
 
     function supportsDeleteCard()
