@@ -33,7 +33,8 @@ class CompleteAuthorizeResponse extends AbstractResponse
 
     public function validateSignature($secret_key)
     {
-        $signed_field_names_string = isset($this->data['signed_field_names']) ? $this->data['signed_field_names'] : null;
+        $signed_field_names_string = isset($this->data['signed_field_names'])
+            ? $this->data['signed_field_names'] : null;
         $signed_field_names = explode(",", $signed_field_names_string);
 
         $signed_data = array();

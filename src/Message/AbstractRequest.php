@@ -126,7 +126,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return base64_encode(hash_hmac('sha256', $pairs, $secret_key, true));
     }
 
-    function supportsDeleteCard()
+    public function supportsDeleteCard()
     {
         return false;
     }

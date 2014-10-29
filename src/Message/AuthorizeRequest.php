@@ -18,7 +18,8 @@ class AuthorizeRequest extends AbstractRequest
         $data['signed_field_names'] = implode(',', array_keys($data)) . ',signed_field_names';
         $data['signature'] = $this->signData($data);
 
-        // this is in progress - at this stage let's just pass the cc fields through but really we need to return a form for them to enter it
+        // this is in progress - at this stage let's just pass the
+        // cc fields through but really we need to return a form for them to enter it
         $data['card_type'] = $this->getCardType();
         $data['card_number'] = $this->getCard()->getNumber();
         $data['card_expiry_date'] = $this->getCard()->getExpiryDate('m-Y');

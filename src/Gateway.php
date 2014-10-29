@@ -8,7 +8,8 @@ use Omnipay\Cybersource\Message\RefundRequest;
 /**
  * CyberSource Secure Acceptance Silent Order POST Gateway
  *
- * @link http://apps.cybersource.com/library/documentation/dev_guides/Secure_Acceptance_SOP/html/wwhelp/wwhimpl/js/html/wwhelp.htm
+ * @link http:
+ * //apps.cybersource.com/library/documentation/dev_guides/Secure_Acceptance_SOP/html/wwhelp/wwhimpl/js/html/wwhelp.htm
  */
 class Gateway extends AbstractGateway
 {
