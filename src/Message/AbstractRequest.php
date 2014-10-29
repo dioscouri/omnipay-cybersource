@@ -12,7 +12,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     protected $liveEndpoint = 'https://secureacceptance.cybersource.com/silent';
     protected $testEndpoint = 'https://testsecureacceptance.cybersource.com/silent';
     protected $endpoint = '';
-    protected $isUsOrCanada = FALSE;
+    protected $isUsOrCanada = false;
 
     public function sendData($data)
     {
@@ -105,7 +105,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         $types = $this->getCardTypes();
         $brand = $this->getCard()->getBrand();
-        return empty($types[$brand]) ? NULL : $types[$brand];
+        return empty($types[$brand]) ? null : $types[$brand];
     }
 
     /**
@@ -128,6 +128,6 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 
     function supportsDeleteCard()
     {
-        return FALSE;
+        return false;
     }
 }
