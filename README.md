@@ -7,7 +7,7 @@
 [![Total Downloads](https://poser.pugx.org/dioscouri/omnipay-cybersource/d/total.png)](https://packagist.org/dioscouri/omnipay-cybersource/)
 
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
-processing library for PHP 5.3+. This package implements 2Checkout support for Omnipay.
+processing library for PHP 5.3+. This package implements [Cybersource](http://www.cybersource.com/) support for Omnipay.
 
 ## Installation
 
