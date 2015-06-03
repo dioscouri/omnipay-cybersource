@@ -21,7 +21,7 @@ class CompletePurchaseResponse extends CompleteAuthorizeResponse
 
     public function getTransactionReference()
     {
-      return isset($this->data['transaction_id']) ? $this->data['transaction_id'] : null;
+        return isset($this->data['transaction_id']) ? $this->data['transaction_id'] : null;
     }
 
     public function getMessage()
