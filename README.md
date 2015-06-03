@@ -2,7 +2,7 @@
 
 **Cybersource driver for the Omnipay PHP payment processing library**
 
-[![Build Status](https://travis-ci.org/dioscouri/omnipay-cybersource.png?branch=master)](https://travis-ci.org/eileenmcnaughton/omnipay-cybersource)
+[![Build Status](https://travis-ci.org/dioscouri/omnipay-cybersource.png?branch=master)](https://travis-ci.org/dioscouri/omnipay-cybersource)
 [![Latest Stable Version](https://poser.pugx.org/dioscouri/omnipay-cybersource/version.png)](https://packagist.org/dioscouri/omnipay-cybersource/)
 [![Total Downloads](https://poser.pugx.org/dioscouri/omnipay-cybersource/d/total.png)](https://packagist.org/dioscouri/omnipay-cybersource/)
 
