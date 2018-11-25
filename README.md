@@ -17,7 +17,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "dioscouri/omnipay-cybersource": "~2.0"
+        "dioscouri/omnipay-cybersource": "~3.0"
     }
 }
 ```
